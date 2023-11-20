@@ -1,0 +1,193 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #24292e; /* GitHub-like dark blue */
+  padding: 20px;
+  color: #ffffff;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:antiquewhite;
+  padding: 50px;
+}
+
+.product-card {
+  width: calc(30% - 20px); /* 20px margin on each side */
+  border: 1px solid #e1e4e8; /* GitHub-like border color */
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+  border-radius: 14px;
+  display: flex; /* Use flexbox for vertical centering */
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+}
+
+.product-card img {
+  max-height: 150px; /* Set a maximum height for all images */
+  width: auto;
+  object-fit: contain; /* Adjust to 'contain' for maintaining aspect ratio */
+  margin-bottom: 10px; 
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #24292e; /* GitHub-like text color */
+}
+
+.product-card button {
+  margin-top: 30px; /* Align the button to the bottom */
+  padding: 10px 20px;
+  background-color: #28a745; /* GitHub-like green */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.product-card button:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #e1e4e8;
+  margin: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  /* color:blue; */
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 10px;
+  padding-left: 60px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  /* color:green; */
+
+  border-bottom: 1px solid #e1e4e8;
+  /* padding: 10px 0; */
+}
+
+.cart-item img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+  margin-right: 10px;
+  background-color: #000000; /* Set background color to black */
+}
+
+
+.cart-item-header,
+.cart-item-details,
+.cart-item-price,
+.cart-item-quantity,
+.cart-item-total,
+.cart-item-remove {
+  flex: 1;
+  text-align: center;
+}
+
+.cart-item-remove button {
+  background-color: #dc3545; /* Bootstrap-like red */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.cart-item-remove button:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #24292e; /* GitHub-like text color */
+}
+
+.cart-item-quantity button {
+  border: 1px solid #007bff; /* Border color similar to Bootstrap blue */
+  color: #007bff; /* Text color similar to Bootstrap blue */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 4px;
+  margin: 0 5px;
+}
+
+.cart-item-quantity button:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+.cart-item-quantity span {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+/* App.css */
+
+/* ... (your existing styles) */
+
+.notification {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745; /* Bootstrap-like green */
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.notification:hover {
+  opacity: 0.9;
+}
+
+/* ... (existing code) */
+
